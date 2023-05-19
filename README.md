@@ -18,3 +18,5 @@ Description of the script:
 - It extracts the Archive IDs from the job output.
 - It deletes each archive from the vault by iterating over the Archive IDs and calling the aws glacier delete-archive command.
 - Finally, it displays a message indicating that all archives have been deleted.
+
+
