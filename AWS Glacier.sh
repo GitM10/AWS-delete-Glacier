@@ -148,7 +148,8 @@ echo -e "Job Status: ${ORANGE}$job_status${NC}"
 # Check if the job is in progress and display the note
 if [[ "$job_status" == "InProgress" ]]; then
   echo -e "${YELLOW}NOTE: The inventory retrieval job may take hours or days to complete, depending on the number of archives in the vault.${NC}"
-  echo -e "${YELLOW}Only if you have a few archives, don't stop the script, otherwise SAVE the job ID, and when you rerun the script and are asked if you have the job ID, respond yes and proceed. The job has been launched on AWS.${NC}"
+  echo -e "${YELLOW}Only if you have a few archives, don't stop the script, otherwise SAVE the job ID, and when you rerun the script and are asked if you have the job ID, respond yes and proceed.${NC}"
+  echo -e "${YELLOW}The job has been launched on AWS${NC}"
 fi
 
 # Wait for the job to complete
@@ -179,4 +180,5 @@ for archive_id in $archive_ids; do
 done
 
 echo "All archives deleted. Now wait a few hours. Then delete the AWS Glacier from the AWS console and it's done."
+
 
