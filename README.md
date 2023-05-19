@@ -1,4 +1,4 @@
-# AWS-remove-Glacier
+# AWS-delete-Glacier
 
 It is a bash script FOR MAC OS that interacts with the AWS Command Line Interface (CLI) to perform operations on an AWS Glacier vault.
 Please note that this script assumes it is running on a macOS system, and it requires the AWS CLI to be already installed and properly configured with the necessary credentials.
