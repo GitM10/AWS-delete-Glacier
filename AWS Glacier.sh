@@ -57,7 +57,7 @@ echo -e "${RED}This script assumes that the AWS CLI is properly installed and co
 echo -e "${RED}If you have not installed or configured the AWS CLI, please do so before running this script.${NC}"
 echo -e "${RED}THIS BASH SCRIPT IS WRITTEN FOR MAC OS.${NC}"
 echo -e "${RED} ${NC}"
-echo -e "${RED}Press Enter to continue, or Ctrl+C to abort.${NC}"
+echo -e "${RED}Press Enter to continue, or Ctrl+Z to abort.${NC}"
 read
 
 # Check if the AWS CLI is installed
