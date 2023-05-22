@@ -176,9 +176,8 @@ archive_ids=$(jq -r '.ArchiveList[].ArchiveId' "output.json")
 # Delete each archive from the vault
 for archive_id in $archive_ids; do
   echo "Deleting archive with ID: $archive_id"
+  echo "aws glacier delete-archive --vault-name \"$vault_name\" --account-id \"$aws_account_id\" --archive-id \"$archive_id\" --region \"$aws_region\""
   aws glacier delete-archive --vault-name "$vault_name" --account-id "$aws_account_id" --archive-id "$archive_id" --region "$aws_region"
 done
 
 echo "All archives deleted. Now wait a few hours. Then delete the AWS Glacier from the AWS console and it's done."
-
-
